@@ -6,6 +6,7 @@
     <title>Scaramouche - Genshin Impact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -848,7 +849,7 @@
             transform: rotate(30deg);
         }
 
-        /* Responsive Design */
+        /* Responsive Design - Improved for 360px and below */
         @media (max-width: 900px) {
             .hero-title {
                 font-size: 2.5rem;
@@ -940,6 +941,154 @@
             }
         }
 
+        /* Improved mobile responsiveness for 360px and below */
+        @media (max-width: 400px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero {
+                margin: 2rem 0;
+                gap: 2rem;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
+            
+            .hero-desc {
+                font-size: 1rem;
+                max-width: 100%;
+            }
+            
+            .hero-stats {
+                gap: 1rem;
+            }
+            
+            .stat {
+                padding: 0.8rem;
+                flex: 1;
+                min-width: 90px;
+            }
+            
+            .stat-value {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+                margin: 2rem 0 1rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .card-content {
+                padding: 1.2rem;
+            }
+            
+            .card-title {
+                font-size: 1.2rem;
+            }
+            
+            .search-section {
+                padding: 1.5rem;
+            }
+            
+            .search-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-item {
+                padding: 1rem;
+            }
+            
+            .footer-section {
+                min-width: 100%;
+            }
+            
+            .footer-title {
+                font-size: 1.2rem;
+            }
+            
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .btn-login, .btn-signup {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+            
+            .logo img {
+                height: 35px;
+            }
+            
+            .logo-text {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero-title {
+                font-size: 1.7rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stat {
+                width: 100%;
+                max-width: 200px;
+            }
+            
+            .card-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+            }
+            
+            .character-card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .character-img {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .nav-actions {
+                display: none;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .hero-title {
+                font-size: 1.6rem;
+            }
+            
+            .hero-desc {
+                font-size: 0.95rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .card-img {
+                height: 180px;
+            }
+            
+            .search-item span {
+                font-size: 0.9rem;
+            }
+        }
         
         @keyframes slideDown {
             from {
@@ -969,6 +1118,10 @@
         }
     </style>
 </head>
+
+
+
+
 <body>
     <header>
         <div class="container nav">
